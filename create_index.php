@@ -10,7 +10,8 @@ function IndexMe(){
     OpenDB();
 
     file_put_contents("index.html",'<html><body>');
-
+    $head = "<h1>Letztes Update: " . date("d.M.Y") ."</h1>";
+    file_put_contents("index.html", $head, FILE_APPEND);
 
     $results = $db->query("SELECT * FROM WDDokumente ORDER BY doctimestamp DESC");
     while($subres = $results->fetchArray()){
