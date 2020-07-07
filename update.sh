@@ -1,9 +1,9 @@
 #!/bin/bash
 
 cd /root/bt_wd_indexer
-php extract.php
+/usr/bin/php extract.php
 sleep 2
-php create_index.php
+/usr/bin/php create_index.php
 sleep 2
 git add .
 git commit -m "Update"
