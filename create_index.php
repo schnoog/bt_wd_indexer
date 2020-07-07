@@ -9,7 +9,7 @@ function IndexMe(){
     global $db,$doubles, $OPF;
     OpenDB();
 
-    file_put_contents("index.html",'<html><head>Cache-Control: max-age=20</head><body>');
+    file_put_contents("index.html",'<html><body>');
     $head = "<h1>Letztes Update: " . date("d.M.Y") ."</h1>";
 
     file_put_contents("index.html", $head, FILE_APPEND);
