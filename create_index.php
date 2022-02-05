@@ -10,7 +10,7 @@ function IndexMe(){
     OpenDB();
 
     file_put_contents("index.html",'<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"/></head><body>');
-    $head = "<h1>Letztes Update: " . date("d.M.Y") ."</h1>";
+    $head = "<h1>Publikationen des Wissenschaftlichen Dienstes des Bundestages</h1><h2>Letztes Update: " . date("d.M.Y") ."</h2>";
 
     file_put_contents("index.html", $head, FILE_APPEND);
 
