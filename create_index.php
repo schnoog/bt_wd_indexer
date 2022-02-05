@@ -9,7 +9,7 @@ function IndexMe(){
     global $db,$doubles, $OPF;
     OpenDB();
 
-    file_put_contents("index.html",'<html><body>');
+    file_put_contents("index.html",'<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"/></head><body>');
     $head = "<h1>Letztes Update: " . date("d.M.Y") ."</h1>";
 
     file_put_contents("index.html", $head, FILE_APPEND);
