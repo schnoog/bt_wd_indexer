@@ -9,3 +9,5 @@ git add .
 git commit -m "Update"
 git push
 
+cp /root/bt_wd_indexer/index.html /var/www/html/newscrawler/others/index.html
+
